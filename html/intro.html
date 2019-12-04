@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Devendra Ghate">
+  <meta name="dcterms.date" content="2019-12-04">
+  <title>Introduction to Scientific Computing</title>
+  <style>code{white-space: pre;}</style>
+  <style>
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/edwardtufte/tufte-css@1.4/tufte.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/edwardtufte/tufte-css@1.4/latex.css">
+  <style>
+    pre {
+      font-size: 0.9rem;
+      width: 52.5%;
+      margin-left: 2.5%;
+      overflow-x: auto;
+    }
+    @media (max-width: 760px) {
+      pre {
+        width: 97%;
+      }
+    }
+    table {
+      border-top: 2px solid #111;
+      border-bottom: 2px solid #111;
+      font-size: 1.1rem;
+    }
+    th {
+      border-bottom: 1px solid #111;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<article>
+<section>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/home/deven/share/tufte-css/tufte.css" type="text/css" />
+</head>
+<body>
+<p><a href="./index.html">contents</a>             <a href="../index.html">home</a> <!--[home](index.html) &nbsp; &nbsp; [research](home/research.html) &nbsp; &nbsp; [teaching](home/teaching.html) &nbsp; &nbsp; [blog](blog/index.html) &nbsp; &nbsp;  [about](home/about.html)--></p>
+<hr />
+</body>
+</html>
+<header>
+<h1 class="title">Introduction to Scientific Computing</h1>
+<p class="author">Devendra Ghate</p>
+<p class="date">2019-12-04</p>
+</header>
+<h1 id="introduction">Introduction</h1>
+<p>Computer language is a human to machine language.</p>
+<hr />
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="pp">#include</span><span class="im">&lt;iostream&gt;</span>
+
+<span class="dt">int</span> main(){
+   <span class="bu">std::</span>cout&lt;&lt;<span class="st">&quot;Hello World&quot;</span>&lt;&lt;<span class="bu">std::</span>endl;
+}</code></pre></div>
+<p><strong>&gt;&gt;</strong></p>
+<div class="sourceCode"><pre class="sourceCode bash"><code class="sourceCode bash"><span class="ex">Hello</span> World</code></pre></div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/home/deven/share/tufte-css/tufte.css" type="text/css" />
+</head>
+<body>
+<hr />
+<p>© Devendra Ghate 2019-present. Generated using <a href="https://">pandoc</a>, <a href="">pp</a> and <a href="">Tufte CSS</a>.</p>
+</body>
+</html>
+</section>
+</article>
+</body>
+</html>
