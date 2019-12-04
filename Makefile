@@ -2,7 +2,7 @@
 
 GCPP=g++
 GCPPFLAGS=
-DEPS = 
+DEPS =
 
 CODE_IN = code
 CODE_OUT = bin
@@ -13,8 +13,8 @@ CODE_TARGETS = $(patsubst ${CODE_IN}/%.cpp, ${CODE_OUT}/%.out, ${CODE_SRC})
 ${CODE_OUT}/%.out: $(CODE_IN)/%.cpp $(DEPS)
 	$(GCPP) -o $@ $< $(GCPPFLAGS)
 
-CPP_IN = src
-CPP_OUT = doc
+CPP_IN = markdown
+CPP_OUT = html
 
 CPPHEADER = ${CPP_OUT}/header.html
 CPPFOOTER = ${CPP_OUT}/footer.html
