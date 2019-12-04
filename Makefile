@@ -14,7 +14,7 @@ ${CODE_OUT}/%.out: $(CODE_IN)/%.cpp $(DEPS)
 	$(GCPP) -o $@ $< $(GCPPFLAGS)
 
 CPP_IN = src
-CPP_OUT = html
+CPP_OUT = doc
 
 CPPHEADER = ${CPP_OUT}/header.html
 CPPFOOTER = ${CPP_OUT}/footer.html

@@ -1,2 +1,2 @@
 
-#. [Introduction](intro.html)
+#. [Introduction](html/intro.html)
